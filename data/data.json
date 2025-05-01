@@ -1,0 +1,156 @@
+{
+  "entrees": [
+    {
+      "bg_image_id": "placeholder ID 1",
+      "title": "placeholder title 1",
+      "description": "placeholder description 1",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    },
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    }
+  ],
+  "main": [
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    },
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    }
+  ],
+  "salads": [
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    },
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    }
+  ],
+  "drinks": [
+    {
+      "bg_image_id": "placeholder ID",
+      "title": "placeholder title 1",
+      "description": "placeholder description 2",
+      "hide": false,
+      "prices": [
+        {
+          "serving": "serving title",
+          "serving_price": 20000
+        }
+      ],
+      "discount_prices": [
+        {
+          "serving": "serving title",
+          "serving_disc_price": 15000
+        }
+      ]
+    }
+  ]
+}
