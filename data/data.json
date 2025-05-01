@@ -1,154 +1,174 @@
 {
   "entrees": [
     {
-      "bg_image_id": "placeholder ID 1",
+      "bg_image_id": "image1",
       "title": "placeholder title 1",
       "description": "placeholder description 1",
       "hide": false,
       "prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_price": 20000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_price": 20500
+        },
+        {
+          "serving": "serving title 3",
+          "serving_price": 22000
         }
       ],
       "discount_prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_disc_price": 15000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_disc_price": 17000
+        },
+        {
+          "serving": "serving title 3",
+          "serving_disc_price": 20000
         }
       ]
     },
     {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
+      "bg_image_id": "image2",
+      "title": "placeholder title 2",
       "description": "placeholder description 2",
       "hide": false,
       "prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_price": 20000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_price": 20500
+        },
+        {
+          "serving": "serving title 3",
+          "serving_price": 22000
         }
       ],
       "discount_prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_disc_price": 15000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_disc_price": 17000
+        },
+        {
+          "serving": "serving title 3",
+          "serving_disc_price": 20000
         }
       ]
     }
   ],
   "main": [
     {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
+      "bg_image_id": "image3",
+      "title": "placeholder title 3",
+      "description": "placeholder description 3",
       "hide": false,
       "prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_price": 20000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_price": 20500
+        },
+        {
+          "serving": "serving title 3",
+          "serving_price": 22000
         }
       ],
       "discount_prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_disc_price": 15000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_disc_price": 17000
+        },
+        {
+          "serving": "serving title 3",
+          "serving_disc_price": 20000
         }
       ]
     },
     {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
+      "bg_image_id": "image4",
+      "title": "placeholder title 4",
+      "description": "placeholder description 4",
       "hide": false,
       "prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_price": 20000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_price": 20500
+        },
+        {
+          "serving": "serving title 3",
+          "serving_price": 22000
         }
       ],
       "discount_prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_disc_price": 15000
-        }
-      ]
-    }
-  ],
-  "salads": [
-    {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
-      "hide": false,
-      "prices": [
+        },
         {
-          "serving": "serving title",
-          "serving_price": 20000
-        }
-      ],
-      "discount_prices": [
+          "serving": "serving title 2",
+          "serving_disc_price": 17000
+        },
         {
-          "serving": "serving title",
-          "serving_disc_price": 15000
+          "serving": "serving title 3",
+          "serving_disc_price": 20000
         }
       ]
     },
     {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
+      "bg_image_id": "image5",
+      "title": "placeholder title 5",
+      "description": "placeholder description 5",
       "hide": false,
       "prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_price": 20000
+        },
+        {
+          "serving": "serving title 2",
+          "serving_price": 20500
+        },
+        {
+          "serving": "serving title 3",
+          "serving_price": 22000
         }
       ],
       "discount_prices": [
         {
-          "serving": "serving title",
+          "serving": "serving title 1",
           "serving_disc_price": 15000
-        }
-      ]
-    }
-  ],
-  "desserts": [
-    {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
-      "hide": false,
-      "prices": [
+        },
         {
-          "serving": "serving title",
-          "serving_price": 20000
-        }
-      ],
-      "discount_prices": [
+          "serving": "serving title 2",
+          "serving_disc_price": 0
+        },
         {
-          "serving": "serving title",
-          "serving_disc_price": 15000
-        }
-      ]
-    }
-  ],
-  "drinks": [
-    {
-      "bg_image_id": "placeholder ID",
-      "title": "placeholder title 1",
-      "description": "placeholder description 2",
-      "hide": false,
-      "prices": [
-        {
-          "serving": "serving title",
-          "serving_price": 20000
-        }
-      ],
-      "discount_prices": [
-        {
-          "serving": "serving title",
-          "serving_disc_price": 15000
+          "serving": "serving title 3",
+          "serving_disc_price": 20000
         }
       ]
     }

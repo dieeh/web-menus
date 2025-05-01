@@ -1,16 +1,23 @@
 ---
-// src/pages/index.astro
-import productos from "../../data/data.json";
+import data from "../../data/data.json";
+import Card from "./Card.astro";
+
+const { category } = Astro.props;
+const categoryItems = data[category]?.filter((item) => !item.hide) || [];
 ---
 
 <div>
   <ul>
     {
-      productos.map((producto) => (
-        <li key={producto.id}>
-          {producto.nombre} - ${producto.precio}
-        </li>
-      ))
+      categoryItems.length > 0 ? (
+        categoryItems.map((item) => (
+          <li>
+            <Card item={item} />
+          </li>
+        ))
+      ) : (
+        <li>No hay elementos en esta categoría</li>
+      )
     }
   </ul>
 </div>
