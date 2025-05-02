@@ -1,9 +1,10 @@
 ---
 const { item } = Astro.props;
+console.log(item.bg_image_id);
 ---
 
 <div>
-  <img src={`../../public/images/${item.bg_image_id}.jpeg`} alt="" />
+  <img src={`images/${item.bg_image_id}.jpeg`} alt="" />
   <div>
     <h1>{item.title}</h1>
     <h2>{item.description}</h2>

@@ -1,7 +1,7 @@
 {
   "entrees": [
     {
-      "bg_image_id": "image (1)",
+      "bg_image_id": "image(1)",
       "title": "placeholder title 1",
       "description": "placeholder description 1",
       "hide": false,
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "bg_image_id": "image (2)",
+      "bg_image_id": "image(2)",
       "title": "placeholder title 2",
       "description": "placeholder description 2",
       "hide": false,
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "bg_image_id": "image (3)",
+      "bg_image_id": "image(3)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "bg_image_id": "image (4)",
+      "bg_image_id": "image(4)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "bg_image_id": "image (5)",
+      "bg_image_id": "image(5)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "bg_image_id": "image (6)",
+      "bg_image_id": "image(6)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -205,7 +205,7 @@
       ]
     },
     {
-      "bg_image_id": "image (7)",
+      "bg_image_id": "image(7)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "bg_image_id": "image (8)",
+      "bg_image_id": "image(8)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "bg_image_id": "image (9)",
+      "bg_image_id": "image(9)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "bg_image_id": "image (10)",
+      "bg_image_id": "image(10)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "bg_image_id": "image (11)",
+      "bg_image_id": "image(11)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -375,7 +375,7 @@
       ]
     },
     {
-      "bg_image_id": "image (12)",
+      "bg_image_id": "image(12)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -409,7 +409,7 @@
       ]
     },
     {
-      "bg_image_id": "image (13)",
+      "bg_image_id": "image(13)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "bg_image_id": "image (14)",
+      "bg_image_id": "image(14)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -477,7 +477,7 @@
       ]
     },
     {
-      "bg_image_id": "image (15)",
+      "bg_image_id": "image(15)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "bg_image_id": "image (16)",
+      "bg_image_id": "image(16)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -547,7 +547,7 @@
   ],
   "main": [
     {
-      "bg_image_id": "image (17)",
+      "bg_image_id": "image(17)",
       "title": "placeholder title 3",
       "description": "placeholder description 3",
       "hide": false,
@@ -581,7 +581,7 @@
       ]
     },
     {
-      "bg_image_id": "image (4)",
+      "bg_image_id": "image(4)",
       "title": "placeholder title 4",
       "description": "placeholder description 4",
       "hide": false,
@@ -615,7 +615,7 @@
       ]
     },
     {
-      "bg_image_id": "image (5)",
+      "bg_image_id": "image(5)",
       "title": "placeholder title 5",
       "description": "placeholder description 5",
       "hide": false,
