@@ -1,36 +1,44 @@
 ---
-import Layout from "../layouts/Layout.astro";
+const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const res = await fetch("/api/menus/upload", {
+    method: "POST",
+    body: formData,
+  });
+
+  const data = await res.json();
+  if (data.url) {
+    alert("Imagen subida con éxito: " + data.url);
+  } else {
+    alert("Error al subir la imagen");
+  }
+};
 ---
 
-<Layout>
-  <h1>Subí una imagen a Cloudinary</h1>
-  <form id="upload-form" enctype="multipart/form-data">
-    <input type="file" name="file" required />
-    <button type="submit">Subir</button>
-  </form>
+<!-- src/pages/upload.astro -->
+<form onsubmit="handleSubmit(event)">
+  <input type="file" name="image" required />
+  <button type="submit">Subir Imagen</button>
+</form>
 
-  <div id="result"></div>
+<script>
+  // Este es el código para manejar el submit sin React
+  async function handleSubmit(event) {
+    event.preventDefault();
 
-  <script>
-    const form = document.getElementById("upload-form");
-    const result = document.getElementById("result");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-
-      const res = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await res.json();
-
-      if (data.success) {
-        result.innerHTML = `<p>Subida exitosa:</p><img src="${data.url}" width="200" />`;
-      } else {
-        result.textContent = "Error al subir.";
-      }
+    const formData = new FormData(event.target);
+    const res = await fetch("/api/menus/upload", {
+      method: "POST",
+      body: formData,
     });
-  </script>
-</Layout>
+
+    const data = await res.json();
+    if (data.url) {
+      alert("Imagen subida con éxito: " + data.url);
+    } else {
+      alert("Error al subir la imagen");
+    }
+  }
+</script>
