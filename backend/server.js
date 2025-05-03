@@ -1,50 +1,34 @@
-import express from 'express';
-import multer from 'multer';
-import dotenv from 'dotenv';
-import { createClient } from '@supabase/supabase-js';
-import fs from 'fs';
+// backend/server.js
+import express from "express";
+import path from "path";
+import url from "url";
+import dotenv from "dotenv";
+import multer from "multer";
+import { uploadRoute } from "./routes/upload.js"; // Rutas de carga de imágenes
 
 dotenv.config();
 
+// Para obtener __dirname en módulos ES
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
-const upload = multer({ dest: 'tmp/' });
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+// Configurar multer para manejar archivos (imagen en este caso)
+const upload = multer();
 
-app.post('/api/upload', upload.single('file'), async (req, res) => {
-  try {
-    const file = fs.readFileSync(req.file.path);
-    const filename = Date.now() + '-' + req.file.originalname;
+// Usar la ruta de upload
+app.use("/api/upload", upload.single("file"), uploadRoute); // `file` es el nombre del campo de formulario
 
-    const { data, error } = await supabase.storage
-      .from(process.env.SUPABASE_BUCKET)
-      .upload(filename, file, {
-        contentType: req.file.mimetype,
-        upsert: true,
-      });
+// Ruta para servir los archivos estáticos generados por Astro
+app.use(express.static(path.join(__dirname, "../dist")));
 
-    // Limpiar archivo temporal
-    fs.unlinkSync(req.file.path);
-
-    if (error) throw error;
-
-    const { data: publicUrlData } = supabase.storage
-      .from(process.env.SUPABASE_BUCKET)
-      .getPublicUrl(filename);
-
-    res.json({ success: true, url: publicUrlData.publicUrl });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ success: false, error: 'Error al subir archivo' });
-  }
+// Ruta catch-all para manejar todas las demás peticiones y servir la página estática
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../dist/index.html"));
 });
 
-app.use(express.static('dist'));
-
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () =>
-  console.log(`Servidor corriendo en http://localhost:${PORT}`)
-);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
