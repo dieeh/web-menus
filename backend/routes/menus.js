@@ -1,27 +1,10 @@
-import { supabase } from "./supabaseClient.js";
+/* Archivo: backend/routes/menus.js */
+import express from "express";
+import { getMenus } from "../controllers/menusController.js";
 
-export async function fetchMenus() {
-  const { data, error } = await supabase
-    .from("categories")
-    .select(
-      `
-      id,
-      nombre,
-      orden,
-      products (
-        id,
-        nombre,
-        descripcion,
-        precio,
-        orden,
-        image_url
-      )
-    `
-    )
-    .order("orden", { ascending: true }) // orden de categorías
-    .order("orden", { foreignTable: "products", ascending: true }); // orden de productos
+const router = express.Router();
 
-  if (error) throw new Error(`Error al obtener el menú: ${error.message}`);
+// GET /api/menus -> devuelve todas las categorías con sus productos y precios
+router.get("/", getMenus);
 
-  return data;
-}
+export default router;

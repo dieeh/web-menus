@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+const res = await fetch("/api/menus");
+const menus = await res.json();
+---
+
+<Layout>
+  <h1>Menús</h1>
+  {
+    menus.map((cat) => (
+      <section>
+        <h2>{cat.name}</h2>
+        <ul>
+          {cat.products.map((prod) => (
+            <li>
+              <strong>{prod.name}</strong>
+              <br />
+              Precio: {prod.prices.length ? prod.prices[0].price : "—"}
+              <br />
+              Descuento:{" "}
+              {prod.discount_prices.length
+                ? prod.discount_prices[0].discount_price
+                : "—"}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>
