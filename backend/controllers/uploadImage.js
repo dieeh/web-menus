@@ -1,4 +1,4 @@
-import { supabase } from "./supabaseClient.js";
+import { supabase } from "../models/supabaseClient.js";
 
 const bucket = import.meta.env.SUPABASE_BUCKET_NAME;
 

@@ -1,6 +1,6 @@
 // backend/routes/upload.js
 import express from "express";
-import { supabase } from "../supabaseClient.js";
+import { supabase } from "../models/supabaseClient.js";
 
 const router = express.Router();
 

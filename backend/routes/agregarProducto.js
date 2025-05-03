@@ -1,5 +1,5 @@
 import { supabase } from "../../supabaseClient.js";
-import { uploadImage } from "../uploadImage.js";
+import { uploadImage } from "../../temp/backend/controllers/uploadImage.js";
 
 export async function POST({ request }) {
   const formData = await request.formData();
