@@ -1,30 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const res = await fetch("/api/menus");
-const menus = await res.json();
+const data = Astro.props;
 ---
 
 <Layout>
-  <h1>Menús</h1>
+  <h1 id="title-menu"></h1>
+  <!-- <h2>{data}</h2>
   {
-    menus.map((cat) => (
+    data.map((cat) => (
       <section>
         <h2>{cat.name}</h2>
         <ul>
           {cat.products.map((prod) => (
             <li>
-              <strong>{prod.name}</strong>
+              <strong>{prod.title}</strong>
               <br />
-              Precio: {prod.prices.length ? prod.prices[0].price : "—"}
+              Precio: {prod.prices.length ? prod.prices[0].serving_price : "—"}
               <br />
               Descuento:{" "}
               {prod.discount_prices.length
-                ? prod.discount_prices[0].discount_price
+                ? prod.discount_prices[0].serving_disc_price
                 : "—"}
             </li>
           ))}
         </ul>
       </section>
     ))
-  }
+  } -->
 </Layout>
+
+<script>
+  const res = await fetch("http://localhost:3000/api/menus");
+  const data = await res.json();
+  console.log("hjfasñjfasdfñlksdflsjdlfjlsjdflsdlfjsldajfñlsjdf");
+  const title = document.getElementById("title-menu");
+  title.innerHTML = "sapa <b>zorra</b>";
+  console.log(title);
+</script>

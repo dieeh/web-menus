@@ -7,15 +7,16 @@ export const fetchMenus = async () => {
       name,
       products (
         id,
-        name,
+        title,
+        description,
         image_url,
         prices (
-          id,
-          price
+          serving,
+          serving_price
         ),
         discount_prices (
-          id,
-          discount_price
+          serving,
+          serving_disc_price
         )
       )
     `);

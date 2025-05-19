@@ -33,3 +33,30 @@ export const subirImagenYCrearProducto = async ({
 
   return producto;
 };
+
+export const insertarProducto = async ({
+  category_id,
+  title,
+  description,
+  image_url,
+  hide,
+  order_in_category,
+}) => {
+  const { data, error } = await supabase
+    .from("products")
+    .insert([
+      {
+        category_id,
+        title,
+        description,
+        image_url,
+        hide,
+        order_in_category,
+      },
+    ])
+    .select()
+    .single();
+
+  if (error) throw error;
+  return data;
+};
